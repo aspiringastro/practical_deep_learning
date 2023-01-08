@@ -27,7 +27,7 @@ jobs:
         uses: tj-actions/changed-files@v35
       - name: Run nbaction
         id: commit
-        uses: aspiringastro/nbaction@v1
+        uses: aspiringastro/nbaction@v1.0.0
         with:
           nbsource: '${{ steps.pr.outputs.all_changed_files }}'
           nbtarget: 'executed' # specify destination that is not part of .gitignore in your repo
